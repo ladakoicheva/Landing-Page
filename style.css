@@ -369,17 +369,11 @@ button:hover {
     /* background-color: aqua; */
 
   }
-
-  .section-1-img {
-    display: none;
-  }
-
-  .section-1-img-mobile {
-    display: block;
-    margin-top: 36px;
-    align-self: center;
-  }
-
+ .section-1-img {
+   margin-top: 36px;
+   align-self: center;
+ }
+  
   .skills {
     display: flex;
     flex-direction: column;

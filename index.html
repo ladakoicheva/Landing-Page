@@ -46,6 +46,7 @@
   </div>
 
 
+
   <main>
     <section class='section-1' id='home'>
       <div class='wrapper'>
@@ -61,12 +62,13 @@
             <a href="#eng" class="link active">ENG</a>
           </div>
         </div>
-        <div class="section-1-img">
-          <img class="image" src="/imgs/BSPP2266.png" alt="section1 image">
-        </div>
-        <div class="section-1-img-mobile">
-          <img class="image" src="./imgs/1.jpg" alt="section1 image">
-        </div>
+      
+      <picture class="section-1-img">
+          <source srcset="./imgs/1.jpg" media="(max-width: 700px)" />
+         <img class="image" src="./imgs/BSPP2266.png" alt="section1 image" />
+    
+       
+      </picture>
 
     </section>
     <section class='section-2' id='about'>
