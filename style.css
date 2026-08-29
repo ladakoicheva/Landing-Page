@@ -14,7 +14,6 @@
 
 
 * {
-  /* outline: 1px solid; */
   font-size: 18px;
   box-sizing: border-box;
   margin: 0;
@@ -34,6 +33,10 @@ a {
   text-decoration: none;
   font-family: 'Gilroy-bold', sans-serif;
 
+}
+
+a:hover {
+  color: rgba(7, 7, 7,0.7);
 }
 
 h1 {
@@ -57,7 +60,6 @@ button:hover {
 
 .image {
   width: 100%;
-  height: 100%;
   object-fit: cover;
 
 }
@@ -128,8 +130,6 @@ button:hover {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  /* background-color: aqua; */
-
 }
 
 .section-1-img-mobile {
@@ -141,7 +141,6 @@ button:hover {
 .lang a {
   transform: rotate(-90deg) translateX(33px) translateY(22px);
   font-size: 16px;
-  /* background: green; */
 }
 
 
@@ -245,7 +244,10 @@ button:hover {
   margin-top: 84px;
   margin-bottom: 110px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+
+ 
 }
 
 .section-3 h2 {
@@ -333,9 +335,10 @@ button:hover {
   right: -200%;
 
 }
- .lang-menu-mobile{
+
+.lang-menu-mobile {
   display: none;
- }
+}
 
 .menu {
   display: none;
@@ -344,13 +347,14 @@ button:hover {
 
 @media (max-width: 700px) {
 
-  .lang-menu-mobile{
+  .lang-menu-mobile {
     display: block;
     position: absolute;
     transform: rotate(90deg);
     bottom: 57px;
     right: 0;
   }
+
   .header-cont,
   .lang {
     display: none;
@@ -369,15 +373,15 @@ button:hover {
     /* background-color: aqua; */
 
   }
- .section-1-img {
-   margin-top: 36px;
-   align-self: center;
- }
-  
+
+  .section-1-img {
+    margin-top: 36px;
+    align-self: center;
+  }
+
   .skills {
-    display: flex;
-    flex-direction: column;
-    gap: 81px
+    justify-content: center;
+    gap:80px
   }
 
   .section-3 {
@@ -387,6 +391,7 @@ button:hover {
     padding-top: 83px;
     padding-bottom: 98px;
     text-align: center;
+    
 
   }
 
@@ -426,10 +431,13 @@ button:hover {
     top: 20px;
   }
 
+
+
   .burger-menu.open .line:nth-child(1) {
     top: 10px;
     width: 0;
     left: 50%;
+    
   }
 
   .burger-menu.open .line:nth-child(2) {
@@ -444,7 +452,11 @@ button:hover {
     top: 10px;
     width: 0;
     left: 50%;
+    
   }
+
+
+ 
 
   .menu {
     transition: all .3s;
@@ -475,3 +487,4 @@ button:hover {
   }
 
 }
+
